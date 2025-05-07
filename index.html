@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Tech Electrical</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #3399FF;
+      --dark: #111;
+      --light: #FAFAFA;
+      --text-dark: #333;
+      --text-light: #EEE;
+      --accent: #2277CC;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text-dark);
+      background: #FFF;
+      line-height: 1.6;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    header {
+      position: fixed;
+      width: 100%;
+      background: var(--dark);
+      color: var(--text-light);
+      z-index: 1000;
+    }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1em 0;
+    }
+    nav ul { list-style: none; display: flex; }
+    nav li { margin-left: 1.5em; }
+    nav a { font-weight: 600; }
+    nav a:hover { color: var(--accent); }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(17,17,17,0.6), rgba(17,17,17,0.6)), url('337259798_550882003810511_8274419587761349310_n.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--text-light);
+      padding-top: 60px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+    .btn-cta {
+      background: var(--primary);
+      color: #FFF;
+      padding: 0.75em 2em;
+      font-size: 1em;
+      font-weight: 700;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn-cta:hover { background: var(--accent); }
+    section {
+      padding: 4em 0;
+    }
+    .intro { background: var(--light); text-align: center; }
+    .intro p { margin-bottom: 0.5em; font-weight: 500; }
+    .projects .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1em;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 6px;
+      transition: transform 0.3s;
+      display: block;
+    }
+    .gallery img:hover { transform: scale(1.05); }
+    .services ul {
+      list-style: none;
+      columns: 2;
+      gap: 1em;
+    }
+    .services li {
+      margin-bottom: 0.75em;
+      position: relative;
+      padding-left: 1.5em;
+    }
+    .services li::before {
+      content: '✔';
+      position: absolute;
+      left: 0; top: 0;
+      color: var(--primary);
+    }
+    .testimonials {
+      background: var(--light);
+    }
+    .testimonial-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2em;
+    }
+    .testimonial {
+      background: #FFF;
+      border: 1px solid #DDD;
+      border-radius: 6px;
+      padding: 1.5em;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .testimonial p { font-style: italic; margin-bottom: 1em; }
+    .testimonial h4 { text-align: right; font-weight: 600; }
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      display: inline-block;
+      text-align: left;
+    }
+    .contact-list li { margin: 0.5em 0; }
+    .map {
+      margin-top: 2em;
+      text-align: center;
+    }
+    .map iframe {
+      width: 100%; height: 300px;
+      border: none; border-radius: 6px;
+    }
+    footer {
+      background: var(--dark);
+      color: var(--text-light);
+      text-align: center;
+      padding: 1em 0;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h2>Power Tech Electrical</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">What We Do</a></li>
+          <li><a href="#book">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <h1>Local Electrician, Brisbane</h1>
+        <p>Domestic • Commercial • Industrial</p>
+        <button class="btn-cta" onclick="location.href='#book'">Book Now</button>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container">
+        <p><strong>Carina, QLD</strong></p>
+        <p><strong>Phone:</strong> <a href="tel:0405016449">0405 016 449</a></p>
+        <p><strong>Email:</strong> <a href="mailto:nick@powertechelectrical.net">nick@powertechelectrical.net</a></p>
+        <p><strong>Web:</strong> <a href="https://powertechelectrical.net" target="_blank">powertechelectrical.net</a></p>
+      </div>
+    </section>
+
+    <section class="projects" id="services">
+      <div class="container services">
+        <h3>What We Do</h3>
+        <ul>
+          <li>Domestic, commercial & industrial installations</li>
+          <li>Switchboard upgrades & rewiring</li>
+          <li>Safety switch testing & certification</li>
+          <li>LED & security lighting</li>
+          <li>Backup generators & solar power</li>
+          <li>Emergency 24/7 call outs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <h3>Recent Projects</h3>
+        <div class="gallery">
+          <img src="337259798_550882003810511_8274419587761349310_n.jpg" alt="Electrical panel upgrade">
+          <img src="472708586_533472516370280_4989310144845569640_n.jpg" alt="Bathroom lighting installation">
+          <img src="481022750_18016648925662734_1728146426207410000_n.jpg" alt="Office ceiling LED retrofit">
+          <img src="481336031_18017346557662734_2556009219690357049_n.jpg" alt="Bathroom mirror lighting">
+          <img src="482235328_576255552091976_1647972620915268939_n.jpg" alt="Server rack power setup">
+          <img src="489046471_18022040918662734_36428946680207402_n.jpg" alt="Open-plan kitchen lighting">        
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h3>Testimonials</h3>
+        <div class="testimonial-list">
+          <div class="testimonial">
+            <p>“Power Tech Electrical rewired our entire home flawlessly. Reliable and professional!”</p>
+            <h4>– Sarah J.</h4>
+          </div>
+          <div class="testimonial">
+            <p>“Quick emergency response and great value. Highly recommended.”</p>
+            <h4>– Mark T.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="intro">
+      <div class="container">
+        <h3>Book an Appointment</h3>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Your Phone" required>
+          <textarea name="details" rows="4" placeholder="Job Details" required></textarea>
+          <button type="submit" class="btn-cta">Submit</button>
+        </form>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Power Tech Electrical. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
